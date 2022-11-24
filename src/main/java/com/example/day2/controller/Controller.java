@@ -1,9 +1,6 @@
 package com.example.day2.controller;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
@@ -12,6 +9,10 @@ public class Controller {
 
     public String display(){
         return "welcome to the Bridgelapz";
+    }
+    @GetMapping("/get")
+    public String show(){
+        return "hello mark from brigelapz";
     }
     @PostMapping("/post" )
 
