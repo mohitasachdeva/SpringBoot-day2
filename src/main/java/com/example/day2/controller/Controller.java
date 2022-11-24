@@ -14,9 +14,9 @@ public class Controller {
     public String show(){
         return "hello mark from brigelapz";
     }
-    @PostMapping("/post" )
+    @PostMapping("/post/{firstName}" )
 
-    public  String userRegister(@RequestBody String firstName , String lastName , String id ){
+    public  String userRegister(@PathVariable String firstName,@RequestBody  String lastName , String id ){
     return "Persons Details" +firstName + "" +lastName +""+id;
     }
 
