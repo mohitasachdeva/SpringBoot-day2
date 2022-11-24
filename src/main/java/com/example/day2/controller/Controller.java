@@ -10,6 +10,11 @@ public class Controller {
     public  String userRegister(@RequestBody  String firstName, String lastName , String id ){
     return "Persons Details" +firstName + "" +lastName +""+id;
     }
+    @PutMapping("/put/{firstName}")
+
+    public  String user(@PathVariable String firstName, @RequestBody   String lastName , String id ){
+        return "Persons Details" +firstName + "" +lastName +""+id;
+    }
 
 
 }
